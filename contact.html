@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – JIRAclinic</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .contact-info-card {
+      background: linear-gradient(135deg, var(--teal-dark), var(--teal));
+      border-radius: 20px;
+      padding: 40px;
+      color: white;
+    }
+    .contact-info-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: white;
+      margin-bottom: 8px;
+    }
+    .contact-info-card p { color: rgba(255,255,255,0.75); margin-bottom: 32px; }
+    .info-items { display: flex; flex-direction: column; gap: 20px; }
+    .info-item { display: flex; gap: 16px; align-items: flex-start; }
+    .info-item-icon {
+      width: 48px; height: 48px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+    .info-item-text strong { display: block; color: white; font-size: 0.9rem; margin-bottom: 4px; }
+    .info-item-text span { color: rgba(255,255,255,0.7); font-size: 0.88rem; line-height: 1.6; }
+    .hours-table { margin-top: 32px; }
+    .hours-table h4 { color: white; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+    .hours-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.1); font-size: 0.88rem; }
+    .hours-row span:first-child { color: rgba(255,255,255,0.7); }
+    .hours-row span:last-child { color: white; font-weight: 600; }
+    .map-embed {
+      border-radius: 16px;
+      overflow: hidden;
+      height: 300px;
+      background: var(--bg-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      border: 1px solid var(--border);
+      text-align: center;
+      margin-top: 28px;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .contact-form-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 40px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+    .footer-cor{
+        text-align: center;
+    }
+    
+    .contact-form-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .contact-form-card > p { color: var(--text-muted); margin-bottom: 28px; font-size: 0.92rem; }
+    @media(max-width:768px){ .contact-layout { grid-template-columns: 1fr; gap: 30px; } }
+  </style>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <nav>
+        <div class="center-nav">
+           <img src="images/logo.jpg" alt="Clinic logo"> 
+           <h1>Kira Clinic</h1>
+        </div>
+
+        <div class="right-nav">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="paternship.html">Partnership</a>
+            <a href="our doctor.html">Our Doctors</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </nav>
+
+<!-- Emergency CTA -->
+<section class="section section-dark" style="padding: 50px 30px; text-align:center;">
+  <div class="container">
+    <h2 class="section-title light" style="margin-top: 5px;">Having a Medical Emergency?</h2>
+    <p class="section-subtitle light" style="margin: 0 auto 28px;">Do not wait – call our emergency line immediately or come directly to our Emergency Department. We are open 24 hours a day, 7 days a week.</p>
+    <a href="tel:+250788000000" class="btn-primary" style="font-size:1.1rem; padding: 16px 40px;">📞 Call Emergency: +250 788 000 000</a>
+  </div>
+</section>
+
+
+    <div class="footer-col">
+      <h4 style="corner-start-end-shape:inherit;">Contact Us</h4>
+      <ul class="footer-contact-list">
+        <li><span>📍</span><span>Byumba, Gicumbi District, Northern Province, Rwanda</span></li>
+        <li><span>📞</span><span>+250 788 000 000</span></li>
+        <li><span>✉️</span><span>info@byumbahospital.rw</span></li>
+        <li><span>🕐</span><span>Emergency: 24 hours, 7 days</span></li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+  <div class="footer-bottom">
+    <span>© 2026 KIRA clinic. All rights reserved.</span>
+    <span>Ministry of Health – Rwanda Accredited</span>
+  </div>
+</footer>
+
+</body>
+</html>
