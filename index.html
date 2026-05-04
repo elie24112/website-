@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our School</h1>
+    <p>We provide quality education for a better future</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Hero Section with Image -->
+<section class="hero">
+    <img src="school.jpg" alt="School Image">
+    <h2>About Our School</h2>
+    <p>Our school offers modern education, experienced teachers, and a safe learning environment.</p>
+    <button onclick="applyNow()">APPLY NOW</button>
+</section>
+
+<!-- Courses Section -->
+<section id="courses">
+    <h2>Our Courses</h2>
+
+    <div class="courses-container">
+        <div class="course">
+            <img src="math.jpg" alt="Mathematics">
+            <h3>Mathematics</h3>
+            <p>Build strong problem-solving and analytical skills.</p>
+        </div>
+
+        <div class="course">
+            <img src="science.jpg" alt="Science">
+            <h3>Science</h3>
+            <p>Explore physics, chemistry, and biology in a practical way.</p>
+        </div>
+
+        <div class="course">
+            <img src="ict.jpg" alt="ICT">
+            <h3>Information Technology</h3>
+            <p>Learn computer skills and modern technology.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name"><br><br>
+        <input type="email" id="email" placeholder="Your Email"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Our School. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

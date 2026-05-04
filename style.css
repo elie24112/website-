@@ -1,149 +1,96 @@
-*{
+body {
+    font-family: Arial;
     margin: 0;
-    padding: 0;
+    background-color: #f4f4f4;
 }
-body{
-    background-color: white;
-    
-}
-H1{
-    margin: 17px;
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-nav{
-    height: 100px;
-    width: 100%;
-    background-color:darkslategray;
-    display: flex;
-    align-items: center;
-    position: relative;
 
-}
-.left-nav{
-    margin-left: 5%;
-    padding: 5px;
-    display: flex;
-    
-}
-footer{
-    background-color:blue ;
+/* Header */
+header {
+    background-color: #007BFF;
+    color: white;
     text-align: center;
-    background-size: 300px;
-    font-size: 30px;
+    padding: 20px;
 }
-.left-nav img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-.left-nav h1{
-    margin-left: 5px;
-    color: white;
-    
-}
-.right-nav{
-    display: flex;
-    margin-left: 50%;
-}
-.right-nav a{
-    text-decoration:aqua;
-    color: white;
-    margin: 5px;
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: 400;
+
+/* Navigation */
+nav {
+    background: #333;
+    padding: 10px;
     text-align: center;
 }
-.right-nav a:hover{
-    color: rgb(210, 219, 80);
-    text-decoration: underline 5px white;
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
 }
-.container{
-   background-image: url(images/doctor.jpg); 
-   background-color: cadetblue;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img {
     width: 100%;
-    height: 83vh;
-    max-height: 83vh;
-    margin-top: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 20px;
+    max-height: 300px;
+    object-fit: cover;
 }
-.container.buttons{background-color: brown;}
-.container button{
-    height: 50px;
+
+/* Courses */
+#courses {
+    padding: 20px;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course {
+    background: white;
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    text-align: center;
+}
+
+.course img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact */
+#contact {
+    padding: 20px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
     width: 250px;
-    background:blue;
-    border: 2px solid black;
-    margin: 1px;
-    border-radius: 5px;
-
-}
-.container button:last-child{
-    background-color:greenyellow;
-    border: 0;
-}
-.container button:hover{
-    background-color: aquamarine;
-    height: 51px;
-    width: 253px;
-    border: 1px solid black;
 }
 
-.container h1{
-    font-size: 50px;
-    color: black;
-}
-.container p{
-    font-size: 21px;
-}
-
-
-/* CSS FOR SERVICES */
-
-
-.treatment{
-    margin-left: 7%;
-display: flex;
-    margin-top: 10px;
-}
-.treatment img{
-    
-    width: 200px;
-    height: 200px;
-    margin: 0%;
-}
-.treatment .treatment-description{
-    margin-left: 1%;
-    margin-right: 10%;
+/* Button */
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
- 
-.laboratory{margin-left: 40%;
-    
+button:hover {
+    background-color: darkgreen;
 }
-.laboratory img{
-    height: 200px;
-    width: 200px;
-    margin-top: 2%;
-}
-.laboratory .laboratory-description{
-    width: 400px;
-    height: 200px;
-    margin-top: 0%;
 
-}
-.vaccination .vaccination-description{
-    margin: 100px;
-
-    
-}.parternship-dept-grid{
+/* Footer */
+footer {
+    background: #333;
+    color: white;
     text-align: center;
+    padding: 10px;
 }
